@@ -12,8 +12,8 @@ public class MainPair {
         String person = "Ivan Ivanov";
         int age = 25;
         Pair<String, Integer> person_age = new Pair<>(person, age);
-        System.out.println("Имя: " + person_age.getFirst());
-        System.out.println("Возраст: " + person_age.getSecond());
+        System.out.println("Имя: " + person_age.first());
+        System.out.println("Возраст: " + person_age.second());
         System.out.println(person_age);
     }
 
@@ -21,8 +21,8 @@ public class MainPair {
         Date date = new Date();
         int hashCode = date.hashCode();
         Pair<Integer, Date> hashOfDate = new Pair<>(hashCode, date);
-        System.out.println("Дата: " + hashOfDate.getSecond());
-        System.out.println("Хэш: " + hashOfDate.getFirst());
+        System.out.println("Дата: " + hashOfDate.second());
+        System.out.println("Хэш: " + hashOfDate.first());
         System.out.println(hashOfDate);
     }
 }
